@@ -1,0 +1,338 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: box-sixing;
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 20px; */
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{ /*Contato*/
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:#ff0000 ;
+    border: 0; /*borda do botão*/
+    border-radius: 30px;
+    cursor: pointer; /*mãozinha*/
+    transition: .2s;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #ff0000;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* zoom dos botões */
+header a{
+    color: #928f8f;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+/* mudando de cor */
+header a:hover{
+    color: #fff;
+    transform: scale(1.5);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #4e0000;
+    transform: scale(1.05)
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff46;
+}
+
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px; /*espaçameto entre os elementos*/
+}
+
+/* TÍTULO */
+.topo-do-site h1{
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #ff0000;
+    /* font-size: 84px; */
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    /* border-radius: 40px; */
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+} 
+
+/* ESTILO DA HISTORIA*/
+
+section.historia{
+    padding: 40px 4%;
+}
+
+section.historia .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.historia .titulo{
+    color: #fff;
+}
+
+.historia .titulo h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.historia .titulo h2 span{
+    color: #ff0000;
+    display: block;
+}
+
+.historia .titulo p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* ESTILO DO CENÁRIO */
+.titulo-cenario {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo-cenario span {
+    color: #ff0000;
+}
+
+section.cenario{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff46;
+}
+
+section.cenario .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 40% 0%;
+    transition: 8s;
+    cursor: pointer; /*cursor de maozinha*/
+    border-radius: 40px; /*bordas arredondadas*/
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 0%;
+}
+
+/* NOMES DOS CENÁRIOS */
+.overlay{
+    position: absolute;
+    top: 0; /* em cima */
+    left: 0; /* esquerda */
+    width: 100%; 
+    height: 100%;
+    background-color: #00000085;
+    border-radius: 40px;
+    display: flex; /*posicionamento das legendas*/
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* ESTILO DOS CRIADORES */
+.titulo-criadores {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo-criadores span {
+    color: #ff0000;
+}
+
+section.criadores{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff46;
+}
+
+section.criadores .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 40% 0%;
+    transition: 8s;
+    cursor: pointer; /*cursor de maozinha*/
+    border-radius: 40px; /*bordas arredondadas*/
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 0%;
+}
+
+/* NOMES DOS CRIADORES */
+.overlay{
+    position: absolute;
+    top: 0; /* em cima */
+    left: 0; /* esquerda */
+    width: 100%; 
+    height: 100%;
+    background-color: #00000085;
+    border-radius: 40px;
+    display: flex; /*posicionamento das legendas*/
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO */
+.titulo-formulario{
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo-formulario span{
+    color: #ff0000;
+}
+
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px; /*distanciar o titulo do formulario*/
+}
+
+form input, form textarea{
+    width: 100%; /*ocupa todo espaço*/
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* form input::placeholder{
+    color: #ff0000;
+} */
+
+form textarea{
+    resize: none; /* dimensão do campo mesnsagem */
+    max-height: 300px; /* tamanho do quadrado */
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #ff0000;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/*  */
